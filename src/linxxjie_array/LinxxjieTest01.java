@@ -1,3 +1,5 @@
+package linxxjie_array;
+
 public class LinxxjieTest01 {
     public int pivotIndex(int[] nums) {
         if(nums.length < 3){

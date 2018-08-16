@@ -1,3 +1,5 @@
+package linxxjie_array;
+
 public class LinxxjieTest02 {
     public int dominantIndex(int[] nums) {
         if(nums.length <= 1){
