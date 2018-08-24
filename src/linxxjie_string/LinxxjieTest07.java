@@ -19,12 +19,12 @@ public class LinxxjieTest07 {
         int temp = 0;
         for (int i = 0; i < max; i++) {
             //如果a到达最大长度
-            if(starta - i < 0){
+            if (starta - i < 0) {
                 sum = Integer.parseInt(String.valueOf(b.charAt(startb - i))) + temp;
-            }else if(startb - i < 0){
+            } else if (startb - i < 0) {
                 //b到达最大长度
                 sum = Integer.parseInt(String.valueOf(a.charAt(starta - i))) + temp;
-            }else {
+            } else {
                 sum = Integer.parseInt(String.valueOf(b.charAt(startb - i))) + Integer.parseInt(String.valueOf(a.charAt(starta - i))) + temp;
             }
             temp = 0;
@@ -35,7 +35,7 @@ public class LinxxjieTest07 {
             }
             builder.append(sum);
             //如果在最高位需要进位
-            if (i == max-1 && temp != 0) {
+            if (i == max - 1 && temp != 0) {
                 builder.append(1);
             }
         }
